@@ -11,23 +11,22 @@
           v-model="group"
           active-class="green--text text--lighten-2"
         >
-          <a href="/">
+          <router-link to="/">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Inicio</v-list-item-title>
-            </v-list-item>
-          </a>
-
-          <a href="/classificacao">
+            </v-list-item></router-link
+          >
+          <router-link to="/classificacao">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-soccer</v-icon>
               </v-list-item-icon>
               <v-list-item-title> Classificação </v-list-item-title>
             </v-list-item>
-          </a>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -46,6 +45,7 @@ export default {
 
 <style scoped>
 a {
+  text-transform: none;
   text-decoration: none;
 }
 </style>
